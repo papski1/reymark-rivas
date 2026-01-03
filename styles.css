@@ -352,7 +352,6 @@ body {
     overflow: hidden;
 }
 
-<<<<<<< HEAD
 .portfolio-img {
     width: 100%;
     height: 100%;
@@ -365,44 +364,6 @@ body {
     transform: scale(1.1);
 }
 
-=======
-.portfolio-placeholder {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s ease;
-}
-
-.portfolio-item:hover .portfolio-placeholder {
-    transform: scale(1.1);
-}
-
-.portfolio-1 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.portfolio-2 {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-.portfolio-3 {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-}
-
-.portfolio-4 {
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-}
-
-.portfolio-5 {
-    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-}
-
-.portfolio-6 {
-    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
-}
-
->>>>>>> d7a8e72f25f7c3964a311619d8b71fafc4407a34
 .portfolio-overlay {
     position: absolute;
     bottom: 0;
@@ -429,7 +390,6 @@ body {
     font-size: 0.95rem;
 }
 
-<<<<<<< HEAD
 .portfolio-link {
     display: block;
     color: inherit;
@@ -441,8 +401,6 @@ body {
     text-decoration: none;
 }
 
-=======
->>>>>>> d7a8e72f25f7c3964a311619d8b71fafc4407a34
 /* Contact Section */
 .contact {
     padding: 100px 0;
