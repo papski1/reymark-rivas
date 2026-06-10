@@ -4,8 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rivas | IT-ELAI FINALS</title>
+    <meta name="description"
+        content="Rey Mark Rivas' portfolio featuring responsive web projects, services, and contact information.">
+    <meta name="theme-color" content="#111827">
+    <title>Rey Mark Rivas | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -35,9 +43,28 @@
     <section id="home" class="home">
         <div class="home-overlay"></div>
         <div class="home-content">
+            <p class="hero-eyebrow">Aspiring IT professional and UI-focused builder</p>
             <h1 class="home-title">Rey Mark Rivas</h1>
-            <p class="home-description">Wanna know more about me? Click the button below.</p>
-            <a href="#contact" class="cta-button">Get In Touch</a>
+            <p class="home-description">I design and build responsive websites and practical systems that feel clean,
+                fast, and easy to use.</p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="cta-button primary">View Projects</a>
+                <a href="#contact" class="cta-button secondary">Contact Me</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-label">Focus</span>
+                    <strong>Responsive UI</strong>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-label">Stack</span>
+                    <strong>Angular, NestJS, Node.js</strong>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-label">Goal</span>
+                    <strong>Practical, user-friendly builds</strong>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -63,6 +90,23 @@
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">Node.JS</span>
                         <span class="skill-tag">API</span>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <span class="highlight-label">Mindset</span>
+                            <strong>Fast learner</strong>
+                            <p>Always looking for ways to sharpen both technical and creative skills.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="highlight-label">Approach</span>
+                            <strong>Hands-on builder</strong>
+                            <p>I learn best by shipping real work and improving it with feedback.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="highlight-label">Focus</span>
+                            <strong>Career-ready growth</strong>
+                            <p>Open to OJT, collaboration, and opportunities to contribute.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,27 +169,48 @@
                             <h3>Procurement System</h3>
                             <p>A comprehensive procurement platform that streamlines the purchasing process from
                                 requisition to payment.</p>
+                            <div class="portfolio-tags">
+                                <span>Live</span>
+                                <span>Workflow</span>
+                                <span>System</span>
+                            </div>
                         </div>
                     </a>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="project-placeholder.svg" alt="Corporate Website preview" class="portfolio-img"
-                            loading="lazy">
+                    <div class="portfolio-image portfolio-image--placeholder">
+                        <div class="portfolio-placeholder">
+                            <span>Concept Preview</span>
+                            <strong>Corporate Website</strong>
+                            <p>CMS-ready structure with a polished business presentation.</p>
+                        </div>
                     </div>
                     <div class="portfolio-overlay">
                         <h3>Corporate Website</h3>
                         <p>Concept preview for a professional business site with CMS-ready structure</p>
+                        <div class="portfolio-tags">
+                            <span>Concept</span>
+                            <span>CMS</span>
+                            <span>Branding</span>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="project-placeholder.svg" alt="Mobile App Design preview" class="portfolio-img"
-                            loading="lazy">
+                    <div class="portfolio-image portfolio-image--placeholder">
+                        <div class="portfolio-placeholder">
+                            <span>Concept Preview</span>
+                            <strong>Mobile App Design</strong>
+                            <p>Clean mobile interface focused on speed and usability.</p>
+                        </div>
                     </div>
                     <div class="portfolio-overlay">
                         <h3>Mobile App Design</h3>
                         <p>Concept preview for an intuitive mobile application with a clean interface</p>
+                        <div class="portfolio-tags">
+                            <span>Concept</span>
+                            <span>UI</span>
+                            <span>Mobile</span>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
@@ -157,27 +222,48 @@
                         <div class="portfolio-overlay">
                             <h3>Restaurant Website</h3>
                             <p>Beautiful restaurant site with online menu and reservation system</p>
+                            <div class="portfolio-tags">
+                                <span>Live</span>
+                                <span>Menu</span>
+                                <span>Booking</span>
+                            </div>
                         </div>
                     </a>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="project-placeholder.svg" alt="Blog Platform preview" class="portfolio-img"
-                            loading="lazy">
+                    <div class="portfolio-image portfolio-image--placeholder">
+                        <div class="portfolio-placeholder">
+                            <span>Concept Preview</span>
+                            <strong>Blog Platform</strong>
+                            <p>Content-focused layout for modern publishing workflows.</p>
+                        </div>
                     </div>
                     <div class="portfolio-overlay">
                         <h3>Blog Platform</h3>
                         <p>Concept preview for a content management system for modern bloggers</p>
+                        <div class="portfolio-tags">
+                            <span>Concept</span>
+                            <span>Content</span>
+                            <span>CMS</span>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="project-placeholder.svg" alt="Dashboard Application preview" class="portfolio-img"
-                            loading="lazy">
+                    <div class="portfolio-image portfolio-image--placeholder">
+                        <div class="portfolio-placeholder">
+                            <span>Concept Preview</span>
+                            <strong>Dashboard Application</strong>
+                            <p>Analytics-first interface with a clean data hierarchy.</p>
+                        </div>
                     </div>
                     <div class="portfolio-overlay">
                         <h3>Dashboard Application</h3>
                         <p>Concept preview for an analytics dashboard with real-time visualization</p>
+                        <div class="portfolio-tags">
+                            <span>Concept</span>
+                            <span>Analytics</span>
+                            <span>Dashboard</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -207,6 +293,12 @@
                 <div class="contact-info">
                     <div class="social-links">
                         <h3>Message Me</h3>
+                        <p class="contact-summary">Open for internships, project collaborations, and UI-focused builds.</p>
+                        <div class="contact-badges">
+                            <span>Responsive websites</span>
+                            <span>Systems & dashboards</span>
+                            <span>Mobile-friendly layouts</span>
+                        </div>
                         <div class="social-icons">
                             <a href="https://www.facebook.com/ahgoy.uno" target="_blank" rel="noopener noreferrer"
                                 class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>

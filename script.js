@@ -2,6 +2,8 @@
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
+const navbar = document.getElementById('navbar');
+const sections = document.querySelectorAll('section[id]');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -16,23 +18,13 @@ navLinks.forEach(link => {
     });
 });
 
-// Navbar scroll effect
-window.addEventListener('scroll', () => {
-    const navbar = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
-    } else {
-        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-    }
-});
-
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+            const offsetTop = target.offsetTop - ((navbar?.offsetHeight ?? 80) + 12);
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
@@ -41,14 +33,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Active nav link on scroll
-window.addEventListener('scroll', () => {
+// Navbar scroll state and active nav link
+const updateNavigationState = () => {
+    navbar?.classList.toggle('scrolled', window.scrollY > 40);
+
     let current = '';
-    const sections = document.querySelectorAll('section[id]');
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
         if (window.scrollY >= (sectionTop - 200)) {
             current = section.getAttribute('id');
         }
@@ -60,7 +52,10 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
-});
+};
+
+window.addEventListener('scroll', updateNavigationState);
+updateNavigationState();
 
 // Contact form handling
 const contactForm = document.getElementById('contact-form');
