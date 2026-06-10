@@ -1,0 +1,13 @@
+# Media assets
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.bmp
+*.svg
+
+# Documents
+*.doc
+*.docx
+
